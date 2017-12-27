@@ -1,0 +1,20 @@
+
+// 用于修改bootstrap和ngx-bootstrap的样式
+// 在修改样式的时候，只需修改你需要改变的参数项，其他原有数据没写上不会覆盖掉
+// 原bootstrap存在的样式，没在本文件中写上不会进行覆盖，不写上代表不修改不添加并不是删除的意思
+
+
+// 修改ngx轮播导航点的样式
+.carousel-indicators li {
+    width: 50px;
+    height: 4px;
+    margin: 1px;
+    border-radius: 0px;
+    opacity: 0.5;
+}
+.carousel-indicators .active {
+    margin: 1px;
+    width: 50px;
+    height: 4px;
+    opacity: 1 !important;
+}
