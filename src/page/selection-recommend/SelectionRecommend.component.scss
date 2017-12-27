@@ -1,7 +1,8 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
+
 .content {
     width: 1250px;
     margin-left: auto;
@@ -17,7 +18,8 @@
     line-height: 90px;
     border-bottom: 5px solid rgb(238, 236, 236)
 }
-.content-title h1{
+
+.content-title h1 {
     width: 100%;
     height: 90px;
     text-align: center;
@@ -64,56 +66,67 @@
     color: #23b8ff;
     cursor: pointer;
 }
-.content-list ul li{
+
+.content-list ul li {
     padding: 0px;
     width: 240px;
     height: 220px;
-    margin-right:3px;
-    margin-left:3px; 
-    margin-top:10px;
-    margin-bottom:10px;  
-    border: 1px solid rgb(204, 204, 203);
-}
-.content-list ul li:hover{
-    box-shadow: 0px 0px 1px  rgb(167, 166, 166);
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.content-list ul li img{
-    margin:10px; 
+.content-list ul li:hover {
+    box-shadow: 0px 0px 3px rgb(150, 149, 149);
+}
+
+.content-list ul li img {
+    margin: 10px;
     width: 220px;
     height: 125px;
 }
-.content-list ul li p{
-    margin-left:10px; 
-    margin-bottom:20px; 
+
+.content-list ul li p {
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
+
 .content-list ul li p:hover {
     color: #23b8ff;
     cursor: pointer;
 }
 
 .content-list-line {
-    margin-left:10px; 
+    position: relative;
+    margin-left: 10px;
 }
-.content-list-line span{
-    display:  inline-block;
-    margin-right:100px;
-    color: #5fb41b; 
-}
-.content-list-line-a1{
-    margin-right:5px;
-    margin-top:5px;  
+
+.content-list-line span {
     display: inline-block;
+}
+
+.content-list-line div {
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+}
+
+.content-list-line-a1 {
+    display: inline-block;
+    margin-right: 5px;
     height: 15px;
     width: 27px;
     font-size: 3px;
     color: #23b8ff;
-    border:1px solid #23b8ff;
+    border: 1px solid #23b8ff;
 }
-.content-list-line-a2{
-    margin-left:10px; 
+
+.content-list-line-a2 {
+    display: inline-block;
     font-size: 3px;
-    color: #999;;
+    color: #999;
+    ;
 }
 
 @media (max-width:1250px) {

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { selectionRecommendRoutes } from './SelectionRecommend.routes'
-
+import { FormsModule }   from '@angular/forms';
+import { CommonModule } from '@angular/common'; 
+import { selectionRecommendRoutes } from './SelectionRecommend.routes';
 
 import { SelectionRecommendComponent } from './SelectionRecommend.component';
 
@@ -10,6 +11,8 @@ import { SelectionRecommendComponent } from './SelectionRecommend.component';
         SelectionRecommendComponent
     ],
     imports: [
+        FormsModule,
+        CommonModule,
         RouterModule.forChild(selectionRecommendRoutes)
     ],
     providers: []

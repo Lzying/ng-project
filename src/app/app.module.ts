@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { PageModule } from '../page/page.module';
+import { FormsModule }   from '@angular/forms';
 
 
 
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
     ],
     imports: [
         BrowserModule,
+        FormsModule,
         PageModule,
         RouterModule.forRoot(appRoutes)
     ],
