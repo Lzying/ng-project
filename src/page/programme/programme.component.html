@@ -1,126 +1,37 @@
-<div class="content">
-    <div class="content-title">
-        <h1>Java
-            <a href="">更多
-                <i class="fa fa-chevron-right"></i>
-            </a>
-        </h1>
-    </div>
-    <div class="content-nav">
-        <ul class="list-inline">
+
+<div class="content" *ngFor="let data of datas">
+        <div class="content-title">
+            <h1>{{data.title}}
+                <a href="https://ke.qq.com/">更多
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </h1>
+        </div>
+        <div class="content-nav">
             <p>课程分类</p>
-            <li>不限</li>
-            <li>零基础</li>
-            <li>python全栈</li>
-            <li>python自动化运维</li>
-            <li>python+人工智能</li>
-            <li>python数据部落</li>
-        </ul>
+            <ul class="list-inline">
+                <li *ngFor="let title of data.titleLists" title="{{title}}" (click)="isTitle=title+data.title" [class.content-nav-li]="isTitle==title+data.title">{{title}}</li>
+            </ul>
+        </div>
+        <div class="content-list">
+            <ul class="list-inline">
+                <li *ngFor="let classify of data.classify">
+                    <a href="{{classify.classHref}}">
+                        <img src="{{classify.imgsrc}}" alt="{{classify.name}}" title="{{classify.name}}">
+                    </a>
+                    <a class="list-inline-a" title="{{classify.name}}" href="{{classify.classHref}}" target="_blank">{{classify.name}}</a>
+                    <div class="content-list-line">
+                        <span *ngIf="(classify.cost==0)" style="color:#5fb41b; ">免费</span>
+                        <span *ngIf="!(classify.cost==0)" style="color:#e85308; ">￥{{classify.cost}}</span>
+                        <div>
+                            <a href="https://ke.qq.com/" class="content-list-line-a1" target="_blank" *ngIf="classify.attestation==1" title="类目认证机构">认证</a>
+                            <a href="{{classify.organizationHref}}" target="_blank" class="content-list-line-a2" title="{{classify.organization}}">{{classify.organization}}</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="content-list">
-        <ul class="list-inline">
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-            <li>
-                <img src="../../assets/imgs/223.png" alt="">
-                <p>Java框架师</p>
-                <div class="content-list-line">
-                    <span>免费</span>
-                    <a href="" class="content-list-line-a1">认证</a>
-                    <a href="" class="content-list-line-a2">XX机构</a>
-                </div>
-
-            </li>
-        </ul>
-
-    </div>
-
-</div>
+    
+    
+    

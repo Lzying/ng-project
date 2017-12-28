@@ -76,19 +76,19 @@
         <div id="carousel-nav">
             <ul class="list-unstyled">
                 <li *ngFor="let data of datas" let i="index" (mouseenter)="isIt=data.title" (mouseleave)="isIt=false">
-                    <a href="#">
+                    <a href="#" title="{{data.title}}">
                         <b>{{data.title}}</b>
                     </a>
-                    <a href="#" *ngFor="let fistList of data.fistLists">{{fistList}}</a>
+                    <a href="#" *ngFor="let fistList of data.fistLists" title="{{fistList}}">{{fistList}}</a>
                     <i class="fa fa-angle-right"></i>
                     <div class="carousel-nav-content" [style.display]="isIt===data.title ? 'block' : 'none'">
-                        <a class="carousel-nav-content-a" href="#" *ngIf="!(data.mytitle==null)">{{data.mytitle}}</a>
+                        <a class="carousel-nav-content-a" href="#" *ngIf="!(data.mytitle==null)" title="{{data.mytitle}}">{{data.mytitle}}</a>
                         <ul class="list-unstyled">
                             <li *ngFor="let secondList of data.secondLists">
-                                <a href="#">
+                                <a href="#" title="{{secondList.title}}">
                                     <b>{{secondList.title}}</b>
                                 </a>
-                                <a href="#" *ngFor="let list of secondList.Lists">{{list}}</a>
+                                <a href="#" *ngFor="let list of secondList.Lists" title="{{list}}">{{list}}</a>
                             </li>
                         </ul>
                     </div>
@@ -112,7 +112,7 @@
             <li routerLink="/">文艺修养</li>
 
         </ul>
-        <a href="#">修改兴趣</a>
+        <a href="">修改兴趣</a>
     </div>
 </div>
 <div id="router">

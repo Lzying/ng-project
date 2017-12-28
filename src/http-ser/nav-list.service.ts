@@ -15,15 +15,15 @@ export class NavListService {
                 },
                 {
                     title: "互联网营销",
-                    Lists: ["网络营销理论", "淘宝营销", "微信营销", "新媒体营销","电商营销","其他"]
+                    Lists: ["网络营销理论", "淘宝营销", "微信营销", "新媒体营销", "电商营销", "其他"]
                 },
                 {
                     title: "编程语言",
-                    Lists: ["C", "C++", "Java", "PHP","C#/.Net","Python","其他"]
+                    Lists: ["C", "C++", "Java", "PHP", "C#/.Net", "Python", "其他"]
                 },
                 {
                     title: "前端开发",
-                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5","CSS3","React","Bootstrap","其他"]
+                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "其他"]
                 },
             ]
         },
@@ -35,40 +35,40 @@ export class NavListService {
             secondLists: [
                 {
                     title: "平面设计",
-                    Lists: ["淘宝美工", "网页美工", "综合平面设计", "摄影后期","广告海报"]
+                    Lists: ["淘宝美工", "网页美工", "综合平面设计", "摄影后期", "广告海报"]
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
                 {
                     title: "编程语言",
-                    Lists: ["C", "C++", "Java", "PHP","C#/.Net","Python","其他"]
-                    
+                    Lists: ["C", "C++", "Java", "PHP", "C#/.Net", "Python", "其他"]
+
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
                 {
                     title: "前端开发",
-                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5","CSS3","React","Bootstrap","其他"]
+                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "其他"]
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
             ]
         },
 
         {
             title: "语言.留学",
-            fistLists: ["实用英语", "雅思","托福"],
+            fistLists: ["实用英语", "雅思", "托福"],
             mytitle: null,
             secondLists: [
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
                 {
                     title: "互联网产品",
@@ -76,15 +76,15 @@ export class NavListService {
                 },
                 {
                     title: "互联网营销",
-                    Lists: ["网络营销理论", "淘宝营销", "微信营销", "新媒体营销","电商营销","其他"]
+                    Lists: ["网络营销理论", "淘宝营销", "微信营销", "新媒体营销", "电商营销", "其他"]
                 },
                 {
                     title: "编程语言",
-                    Lists: ["C", "C++", "Java", "PHP","C#/.Net","Python","其他"]
+                    Lists: ["C", "C++", "Java", "PHP", "C#/.Net", "Python", "其他"]
                 },
                 {
                     title: "前端开发",
-                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5","CSS3","React","Bootstrap","其他"]
+                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "其他"]
                 },
             ]
         },
@@ -96,31 +96,31 @@ export class NavListService {
             secondLists: [
                 {
                     title: "平面设计",
-                    Lists: ["淘宝美工", "网页美工", "综合平面设计", "摄影后期","广告海报"]
+                    Lists: ["淘宝美工", "网页美工", "综合平面设计", "摄影后期", "广告海报"]
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
                 {
                     title: "编程语言",
-                    Lists: ["C", "C++", "Java", "PHP","C#/.Net","Python","其他"]
+                    Lists: ["C", "C++", "Java", "PHP", "C#/.Net", "Python", "其他"]
                 },
                 {
                     title: "前端开发",
-                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5","CSS3","React","Bootstrap","其他"]
+                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "其他"]
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
             ]
         },
 
         {
             title: "升学.考研",
-            fistLists: ["考研", "大学","高中"],
-            mytitle:null ,
+            fistLists: ["考研", "大学", "高中"],
+            mytitle: null,
             secondLists: [
                 {
                     title: "互联网产品",
@@ -128,50 +128,51 @@ export class NavListService {
                 },
                 {
                     title: "互联网营销",
-                    Lists: ["网络营销理论", "淘宝营销", "微信营销", "新媒体营销","电商营销","其他"]
+                    Lists: ["网络营销理论", "淘宝营销", "微信营销", "新媒体营销", "电商营销", "其他"]
                 },
                 {
                     title: "编程语言",
-                    Lists: ["C", "C++", "Java", "PHP","C#/.Net","Python","其他"]
+                    Lists: ["C", "C++", "Java", "PHP", "C#/.Net", "Python", "其他"]
                 },
                 {
                     title: "前端开发",
-                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5","CSS3","React","Bootstrap","其他"]
+                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "其他"]
                 },
             ]
         },
 
         {
             title: "兴趣.生活",
-            fistLists: ["摄影", "乐器演奏","美妆"],
+            fistLists: ["摄影", "乐器演奏", "美妆"],
             mytitle: "腾讯课堂设计大师",
             secondLists: [
                 {
                     title: "平面设计",
-                    Lists: ["淘宝美工", "网页美工", "综合平面设计", "摄影后期","广告海报"]
+                    Lists: ["淘宝美工", "网页美工", "综合平面设计", "摄影后期", "广告海报"]
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
                 {
                     title: "编程语言",
-                    Lists: ["C", "C++", "Java", "PHP","C#/.Net","Python","其他"]
+                    Lists: ["C", "C++", "Java", "PHP", "C#/.Net", "Python", "其他"]
                 },
                 {
                     title: "前端开发",
-                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5","CSS3","React","Bootstrap","其他"]
+                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "其他"]
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计","APP","其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
                 },
             ]
-        },
+
+        }
 
 
     ]
