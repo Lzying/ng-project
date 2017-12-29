@@ -3,10 +3,6 @@
     padding: 0px;
 }
 
-.heights {
-    height: 100%;
-}
-
 .nav-bar {
     width: 1250px;
     margin-left: auto;
@@ -22,36 +18,107 @@
     margin-left: 0px;
 }
 
-.row {
-    height: 80px !important;
+#search {
+    position: relative;
+    width: 350px;
+    height: 50px !important;
+    margin: 15px auto 15px 50px !important;
+    border: 1px solid rgb(199, 196, 196);
+    border-radius: 0px !important;
+    #search-classroom {
+        display: inline-block;
+        border-radius: 0px !important;
+        width: 60px !important;
+        background-color: white;
+        border: none;
+    }
+    #search-switch {
+        position: absolute;
+        top: 48px;
+        left: -1px;
+        width: 62px; // 包括边框所以会比上面多2px
+        height: 50px;
+        background-color: white;
+        border: 1px solid rgb(199, 196, 196);
+        z-index: 25;
+        line-height: 50px;
+        text-indent: 10px;
+    }
+    #search-classroom,
+    #search-switch :hover {
+        cursor: pointer;
+    }
+    input {
+        width: 240px;
+        height: 48px;
+        text-indent: 15px;
+        border: none;
+        border-left: 1px solid rgb(199, 196, 196);
+    }
+    #search-bt {
+        border-radius: 0px !important;
+        width: 48px;
+        height: 48px;
+        background-color: #23b8ff;
+        border: none;
+    }
+    #search-bt:hover {
+        background-color: #10aaf1;
+    }
+    #search-bt a {
+        font-size: 22px;
+        color: white;
+    }
 }
 
 .nav-list {
     width: 100%;
-    padding-right: 0px;
-    padding-left: 40px;
-    position: relative;
-}
-
-.nav-list li {
-    margin-left: 10px;
-    text-align: center;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: #333;
-    font-family: "微软雅黑";
-    font-size: 14px;
-    line-height: 80px;
-}
-
-.nav-list a:hover {
-    cursor: pointer;
+    height: 80px;
+    text-align: right;
+    >li {
+        height: 80px;
+        margin-left: 25px;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: #333;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        line-height: 80px;
+    } //所有a
+    a:hover {
+        cursor: pointer;
+    }
 }
 
 #isMyCourse {
+    position: relative;
     width: 110px;
+    margin-left: 0px !important; // 消除上面列表的总体设置
+    #myCourse {
+        position: absolute;
+        top: 80px;
+        right: -1px;
+        z-index: 5;
+        width: 112px;
+        height: 100px;
+        background-color: white;
+        border: 1px solid rgb(207, 207, 207);
+        padding-top: 15px;
+        li {
+            margin-left: 0px;
+            text-align: center;
+            height: 35px;
+            line-height: 35px !important;
+        }
+        a {
+            line-height: 35px !important;
+        } // 由于上面.nav-list a 定义了其内部所有a标签的样式，覆盖了该标签的一些样式，以下是配置该标签的部分样式
+        #myCourse a:hover {
+            color: #23b8ff;
+        }
+    }
 }
 
 #isMyCourse:hover {
@@ -59,108 +126,17 @@
     box-shadow: 0px 1px 3px rgb(207, 207, 207);
 }
 
-#myCourse {
-    position: absolute;
-    top: 80px;
-    left: 102px;
-    z-index: 5;
-    width: 110px;
-    height: 100px;
-    background-color: white;
-    border: 1px solid rgb(207, 207, 207);
-    padding-top: 15px;
-}
-
-#myCourse li {
-    margin-left: 0px;
-    text-align: center;
-    height: 35px;
-    line-height: 35px !important;
-}
-
-// 由于上面.nav-list a 定义了其内部所有a标签的样式，覆盖了该标签的一些样式，以下是配置该标签的部分样式
-#myCourse a {
-    line-height: 35px !important;
-}
-
-#myCourse a:hover {
-    color: #23b8ff;
-}
-
-#search {
-    position: relative;
-    width: 350px;
-    height: 48px !important;
-    margin: 15px auto auto 50px;
-    border: 1px solid rgb(199, 196, 196);
-    border-radius: 0px !important;
-}
-
-#search input {
-    width: 240px;
-    height: 48px;
-    text-indent: 15px;
-    border: none;
-    border-left: 1px solid rgb(199, 196, 196);
-}
-
-#search-classroom {
-    border-radius: 0px !important;
-    width: 80px;
-    background-color: white;
-    border: none;
-}
-
-#search-classroom>span {
-    font-weight: 400 !important;
-}
-
-#search-bt {
-    border-radius: 0px !important;
-    width: 80px;
-    background-color: #23b8ff;
-    border: none;
-}
-
-#search-bt:hover {
-    background-color: #10aaf1;
-}
-
-#search-bt a {
-    font-size: 22px;
-    color: white;
-}
-
-#search-switch {
-    position: absolute;
-    top: 48px;
-    left: -1px;
-    width: 62px;
-    height: 50px;
-    background-color: white;
-    border: 1px solid rgb(199, 196, 196);
-    z-index: 25;
-    line-height: 50px;
-    text-indent: 10px;
-}
-
-#search-classroom,
-#search-switch :hover {
-    cursor: pointer;
-}
-
 .carousel {
     height: 300px;
+    .carousel-img {
+        display: block;
+        height: 300px;
+        width: 710px;
+        margin: 0px auto 0px auto;
+    }
 }
 
-.carousel img {
-    display: block;
-    height: 300px;
-    width: 710px;
-    margin: 0px auto 0px auto;
-}
-
-.carousel-login {
+.carousel-above {
     position: relative;
     top: -300px;
     width: 1250px;
@@ -176,38 +152,34 @@
     top: 15px;
     right: 0px;
     background-color: white;
-}
-
-.login p {
-    margin-top: 20px;
-    font-size: 16px;
-    color: rgb(173, 171, 171);
-    text-align: center;
-}
-
-.login img {
-    height: 150px;
-    width: 160px;
-    margin-top: 5px;
-}
-
-.login a {
-    display: block;
-    height: 50px;
-    width: 200px;
-    margin: 5px auto auto auto;
-    background-color: #23b8ff;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 3px;
-}
-
-.login a:hover {
-    cursor: pointer;
-    text-decoration: none;
-    background-color: #10aaf1;
+    p {
+        margin-top: 20px;
+        font-size: 16px;
+        color: rgb(173, 171, 171);
+        text-align: center;
+    }
+    img {
+        height: 150px;
+        width: 160px;
+        margin: 5px 30px 0px 30px;
+    }
+    a {
+        display: block;
+        height: 50px;
+        width: 200px;
+        margin: 5px auto auto auto;
+        background-color: #23b8ff;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 3px;
+    }
+    a:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #10aaf1;
+    }
 }
 
 #carousel-nav {
@@ -218,30 +190,22 @@
     height: 300px;
     width: 270px;
     background-color: rgb(252, 250, 250);
-}
-
-// 所有li标签
-#carousel-nav li {
-    height: 50px;
-    width: 270px;
-    line-height: 50px;
-}
-
-#carousel-nav ul li:hover {
-    background-color: white;
-}
-
-// 所有a标签
-#carousel-nav a {
-    color: rgb(46, 45, 45);
-    font-size: 14px;
-    margin-left: 12px;
-}
-
-// 所有b标签
-#carousel-nav b {
-    color: rgb(46, 45, 45);
-    font-size: 16px;
+    li {
+        height: 50px;
+        width: 270px;
+        line-height: 50px;
+    } // 所有li标签
+    li:hover {
+        background-color: white;
+    }
+    a {
+        color: rgb(46, 45, 45);
+        font-size: 14px;
+        margin-left: 12px;
+    } // 所有a标签
+    b {
+        font-size: 16px;
+    } // 所有b标签
 }
 
 .carousel-nav-content {

@@ -8,13 +8,7 @@
             </div>
             <div class="col-sm-5 col-xs-5">
                 <div class="input-group" id="search">
-                    <span class="input-group-addon " id="search-classroom" (click)="isSearch=!isSearch">{{searchClass}}
-                        <span class="fa" [class.fa-angle-up]="isSearch" [class.fa-angle-down]="!isSearch"></span>
-                    </span>
-                    <div id="search-switch" [style.display]="isSearch ? 'block' : 'none'" (click)=searchSwitch()>
-                        <span>{{searchOrgan}}</span>
-                    </div>
-                    <input type="text" placeholder="腾讯课堂设计大师班">
+                    <span class="input-group-addon " id="search-classroom" (click)="isSearch=!isSearch">{{searchClass}}<i class="fa" [class.fa-angle-up]="isSearch" [class.fa-angle-down]="!isSearch"></i></span><div id="search-switch" [style.display]="isSearch ? 'block' : 'none'" (click)=searchSwitch()><span>{{searchOrgan}}</span></div><input type="text" placeholder="腾讯课堂设计大师班">
                     <span class="input-group-addon" id="search-bt">
                         <a href="#">
                             <span class="fa fa-search"></span>
@@ -27,7 +21,7 @@
                     <li>
                         <a title="点击登录">登录</a>
                     </li>
-                    <li style="margin-right: 20px;" (mouseenter)="isMyCourse=true" (mouseleave)="isMyCourse=false" id="isMyCourse">
+                    <li (mouseenter)="isMyCourse=true" (mouseleave)="isMyCourse=false" id="isMyCourse">
                         <a>我要讲课
                             <p class="fa fa-angle-down"></p>
                         </a>
@@ -54,20 +48,12 @@
 </div>
 <div class="carousel container-fluid">
     <carousel>
-        <slide style="background: rgb(7, 18, 44);">
-            <img src="../assets/imgs/0.jpg" alt="First slide">
-        </slide>
-        <slide style="background: rgb(8, 26, 53);">
-            <img src="../assets/imgs/1.jpg" alt="Second slide">
-        </slide>
-        <slide style="background: rgb(29, 22, 22);">
-            <img src="../assets/imgs/2.jpg" alt="Third slide">
-        </slide>
-        <slide style="background: #02a1eb;">
-            <img src="../assets/imgs/3.png" alt="Third slide">
+        <slide *ngFor="let imgData of imgDatas" [style.background-color]="imgData.background">
+            <!-- tyle.background-color后面接的是值，所以不用{{imgData.background}} -->
+            <img class="carousel-img" src="{{imgData.src}}" alt="{{imgData.title}}">
         </slide>
     </carousel>
-    <div class="carousel-login">
+    <div class="carousel-above">
         <div class="login">
             <p>跟进你的学习进度</p>
             <img src="../assets/imgs/login-img.png">
@@ -75,7 +61,7 @@
         </div>
         <div id="carousel-nav">
             <ul class="list-unstyled">
-                <li *ngFor="let data of datas" let i="index" (mouseenter)="isIt=data.title" (mouseleave)="isIt=false">
+                <li *ngFor="let data of datas" (mouseenter)="isIt=data.title" (mouseleave)="isIt=false">
                     <a href="#" title="{{data.title}}">
                         <b>{{data.title}}</b>
                     </a>
@@ -93,13 +79,9 @@
                         </ul>
                     </div>
                 </li>
-
-
             </ul>
         </div>
     </div>
-
-
 </div>
 <div class="container-fluid" id="classContent">
     <div class="option">
@@ -110,12 +92,10 @@
             <li routerLink="/">高中</li>
             <li routerLink="/">实用英语</li>
             <li routerLink="/">文艺修养</li>
-
         </ul>
         <a href="">修改兴趣</a>
     </div>
 </div>
 <div id="router">
     <router-outlet></router-outlet>
-
 </div>
