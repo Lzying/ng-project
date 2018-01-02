@@ -52,7 +52,7 @@ export class NavListService {
                 },
                 {
                     title: "前端开发",
-                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "其他"]
+                    Lists: ["HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap","HTML/CSS", "JavaScript", "jQuery", "HTML5", "CSS3", "React", "Bootstrap", "网络营销理论", "淘宝营销", "微信营销", "新媒体营销", "电商营销","其他"]
                 },
                 {
                     title: "UI设计",
@@ -152,7 +152,7 @@ export class NavListService {
                 },
                 {
                     title: "UI设计",
-                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "其他"]
+                    Lists: ["交互设计", "游戏UI设计", "Web", "UI设计", "APP", "淘宝美工", "网页美工", "综合平面设计", "摄影后期","淘宝美工", "网页美工", "综合平面设计", "摄影后期","淘宝美工", "网页美工", "综合平面设计", "摄影后期","其他"]
                 },
                 {
                     title: "UI设计",

@@ -74,7 +74,9 @@
                                 <a href="#" title="{{secondList.title}}">
                                     <b>{{secondList.title}}</b>
                                 </a>
-                                <a href="#" *ngFor="let list of secondList.Lists" title="{{list}}">{{list}}</a>
+                                <div>
+                                    <a href="#" *ngFor="let list of secondList.Lists" title="{{list}}">{{list}}</a>
+                                </div> 
                             </li>
                         </ul>
                     </div>
@@ -96,6 +98,11 @@
         <a href="">修改兴趣</a>
     </div>
 </div>
+
 <div id="router">
     <router-outlet></router-outlet>
 </div>
+
+<footer class="container-fluid">
+    <p>xx@2018 学习专用</p>
+</footer>
