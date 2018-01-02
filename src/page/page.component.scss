@@ -291,7 +291,6 @@
 .option li:focus {
     outline: none;
 } //消除谷歌浏览器的默认边框
-
 .option-li {
     color: #23b8ff !important;
     border-bottom: 4px solid #23b8ff;
@@ -325,16 +324,25 @@
 
 #router {
     width: 100%;
+    margin-bottom:100px; 
 }
 
-footer{
+footer {
     background: #444547;
     height: 200px;
     color: #777;
+    padding-top:50px; 
 }
-footer p{
-    margin-top:50px; 
 
+footer p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom:10px; 
+}
+
+footer a {
+    font-size: 12px;
+    color: #777;
     text-align: center;
 }
 

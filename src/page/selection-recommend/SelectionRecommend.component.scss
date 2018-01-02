@@ -3,6 +3,177 @@
     margin: 0px;
 }
 
+.live {
+    width: 1250px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:20px; 
+    >h2 {
+        text-align: center;
+    }
+    .live-module {
+        margin-top: 30px;
+        width: 1250px;
+        height: 350px;
+    }
+}
+
+.live-screen {
+    position: relative;
+    float: left;
+    width: 630px;
+    height: 350px;
+    background-color: rgb(207, 212, 185);
+    >img {
+        width: 630px;
+        height: 350px;
+    }
+    .live-screen-into {
+        padding-top: 50px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 630px;
+        height: 350px;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        >p {
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            color: white;
+            font-size: 26px;
+            text-align: center;
+        }
+        >a {
+            display: block;
+            height: 50px;
+            width: 180px;
+            margin: 15px auto;
+            text-align: center;
+            line-height: 50px;
+            background: #23b8ff;
+            color: white;
+            font-size: 22px;
+        }
+        >a:hover {
+            text-decoration: none;
+            background: #1196d3;
+        }
+    }
+}
+
+.live-screen-state {
+    width: 280px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 45px;
+    background-color: black;
+    p {
+        height: 30px;
+        line-height: 30px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+.live-screen-detailed {
+    position: absolute;
+    width: 630px;
+    height: 60px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 10px 10px 10px 20px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    img {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        border-radius: 90px;
+    }
+    p {
+        display: inline-block;
+        margin-right: 15px;
+        height: 40px;
+        width: 250px;
+        line-height: 40px;
+        color: white;
+        font-size: 18px;
+        white-space: nowrap; // 防止输入字符过长影响布局，阻止换行
+        overflow: hidden; // 防止输入字符过长影响布局，隐藏内容
+        text-overflow: ellipsis; // 防止输入字符过长影响布局，溢出部分替换为...
+    }
+    a {
+        display: inline-block;
+        height: 40px;
+        width: 330px;
+        line-height: 40px;
+        color: white;
+        font-size: 18px;
+        white-space: nowrap; // 防止输入字符过长影响布局，阻止换行
+        overflow: hidden; // 防止输入字符过长影响布局，隐藏内容
+        text-overflow: ellipsis; // 防止输入字符过长影响布局，溢出部分替换为...
+    }
+    a:hover {
+        color: #23b8ff;
+        text-decoration: none;
+    }
+}
+
+.live-list { 
+    float: left;
+    width: 620px;
+    height: 350px;
+    background-color: rgb(240, 239, 239);
+    ul {
+        width: 620px;
+        height: 350px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    li{
+        width: 620px;
+        height: 50px;
+        a{
+            float:right; 
+            height: 50px;
+            width: 600px;
+            font-size:16px; 
+            line-height: 50px;
+            color: #333;
+            text-decoration: none;
+            div{
+                float: left;
+                line-height: 50px;
+                width: 100px;
+                margin-left:30px;
+                color: #23b8ff;
+            }
+             p{
+                float: left;
+                width: 400px;
+                margin-left:15px;
+                white-space: nowrap; // 防止输入字符过长影响布局，阻止换行
+                overflow: hidden; // 防止输入字符过长影响布局，隐藏内容
+                text-overflow: ellipsis; // 防止输入字符过长影响布局，溢出部分替换为...
+            }
+        }
+       
+    }
+    img{
+        display: inline-block;
+        margin-right:15px; 
+    }
+}
+
+
+
 .content {
     width: 1250px;
     margin-left: auto;
