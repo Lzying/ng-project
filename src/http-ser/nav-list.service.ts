@@ -178,7 +178,7 @@ export class NavListService {
     ]
 
 
-    fetchData(): any {
+    fetchData(): any[] {
         return this.data;
 
     }

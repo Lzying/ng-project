@@ -324,20 +324,20 @@
 
 #router {
     width: 100%;
-    margin-bottom:100px; 
+    margin-bottom: 100px;
 }
 
 footer {
     background: #444547;
     height: 200px;
     color: #777;
-    padding-top:50px; 
+    padding-top: 50px;
 }
 
 footer p {
     font-size: 12px;
     text-align: center;
-    margin-bottom:10px; 
+    margin-bottom: 10px;
 }
 
 footer a {
@@ -348,7 +348,8 @@ footer a {
 
 @media (max-width:1250px) {
     .carousel,
-    .option {
+    .option,
+    footer {
         width: 1250px;
     }
 }

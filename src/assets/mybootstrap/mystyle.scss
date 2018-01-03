@@ -1,0 +1,19 @@
+//修改字体
+* {
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", arial;
+}
+
+//修改滚动条
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #b9b8b8;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(250, 248, 248);
+}

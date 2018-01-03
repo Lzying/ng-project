@@ -62,7 +62,7 @@ export class DataService {
     ]
 
 
-    fetchData(): any {
+    fetchData(): any[] {
         return this.data;
 
     }

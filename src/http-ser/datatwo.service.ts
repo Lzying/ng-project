@@ -63,7 +63,7 @@ export class DataTwoService {
     ]
 
 
-    fetchData(): any {
+    fetchData(): any[] {
         return this.data;
 
     }
