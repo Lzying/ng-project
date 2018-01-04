@@ -54,12 +54,12 @@
     <div class="content-nav">
         <p>课程分类</p>
         <ul class="list-inline">
-            <li *ngFor="let title of data.titleLists" title="{{title}}" (click)="isTitle=title+data.title" [class.content-nav-li]="isTitle==title+data.title">{{title}}</li>
+            <li *ngFor="let title of data.titleLists ;let thisTitle=index" title="{{title}}" (click)="isTitle=title+data.title;data.CurrentPage=thisTitle" [class.content-nav-li]="isTitle==title+data.title">{{title}}</li>
         </ul>
     </div>
     <div class="content-list">
         <ul class="list-inline">
-            <li *ngFor="let classify of data.classify">
+            <li *ngFor="let classify of data.classify[data.CurrentPage]?.classify">
                 <a href="{{classify.classHref}}">
                     <img src="{{classify.imgsrc}}" alt="{{classify.name}}" title="{{classify.name}}">
                 </a>

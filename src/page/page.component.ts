@@ -16,6 +16,7 @@ export class PageComponent implements OnInit {
      */
     isSearch = false;
     isMyClass = false;
+    isMyCourse=false;
     searchClass: string = "课堂";
     searchOrgan: string = "机构";
     serarchOne: string;
