@@ -349,7 +349,8 @@ footer a {
 @media (max-width:1250px) {
     .carousel,
     .option,
-    footer {
-        width: 1250px;
+    footer ，
+    #classContent {
+        width: 1250px !important;
     }
 }
